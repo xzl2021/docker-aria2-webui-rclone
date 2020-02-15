@@ -6,9 +6,10 @@ if [ ! -f /conf/aria2.conf ]; then
 	fi
 fi
 if [ ! -f /conf/on-complete.sh ]; then
-	cp /files/on-complete.sh /conf/on-complete.sh && chmod +x /conf/on-complete.sh
+	cp /files/on-complete.sh /conf/on-complete.sh
 fi
 
+chmod +x /conf/on-complete.sh
 touch /conf/aria2.session
 
 darkhttpd /webui --port 80 &
