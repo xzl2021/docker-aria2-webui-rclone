@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:latest
 
 MAINTAINER xzl2021 <xzl2021#hotmail.com>
 
